@@ -1,0 +1,25 @@
+
+<div class="container">
+<h1 class="text-center mt-5" >Hello {{userName}}</h1>
+        <form class="row g-3 shadow">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">FirstName</label>
+              <input type="email" class="form-control" id="inputEmail4" name="firstName" [(ngModel)]="fName">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">LastName</label>
+              <input type="password" class="form-control" id="inputPassword4" name="lastName" [(ngModel)]="lName">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Designation</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="designation" [(ngModel)]="desg">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Age</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" name="age" [(ngModel)]="age">
+            </div>
+            <div class="col-12">
+              <button type="submit" (click)="update()" class="btn btn-primary">Update</button>
+            </div>
+          </form>
+</div>
